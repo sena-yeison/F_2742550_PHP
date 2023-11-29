@@ -1,0 +1,44 @@
+[
+    {
+        "nombres" : "Deisy",
+        "apellidos" : "Deisy",
+        "usuario" : "Deisy@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    },
+    {
+        "nombres" : "Carol",
+        "apellidos" : "Deisy",
+        "usuario" : "Carol@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    },
+    {
+        "nombres" : "Maria",
+        "apellidos" : "Deisy",
+        "usuario" : "Maria@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    },
+    {
+        "nombres" : "Pedro",
+        "apellidos" : "Jose",
+        "usuario" : "pedro@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    },
+    {
+        "nombres" : "Jesus",
+        "apellidos" : "Deisy",
+        "usuario" : "Jesus@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    },
+    {
+        "nombres" : "Sofia",
+        "apellidos" : "Deisy",
+        "usuario" : "Sofia@gmail.com",
+        "password" : "Hola123",
+        "estado" : 1
+    }    
+]

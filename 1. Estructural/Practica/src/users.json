@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "name" : "Joel",
+        "lastName" : "Tuiran Durango",
+        "email" : "joel@gmail.com",
+        "password" : "joel123456789",
+        "status" : 0
+    },
+    {
+        "id":2,
+        "name" : "Deisy Milena",
+        "lastName" : "Correa Zabaleta",
+        "email" : "deisy@gmail.com",
+        "password" : "deisy123456789",
+        "status" : 0
+    },
+    {
+        "id":3,
+        "name" : "Juan Pablo",
+        "lastName" : "Cañas Marín",
+        "email" : "juan.pablo@gmail.com",
+        "password" : "juan123456789",
+        "status" : 1
+    },
+    {
+        "id":4,
+        "name" : "Crony Evelyn",
+        "lastName" : "Lopez García",
+        "email" : "crony@gmail.com",
+        "password" : "crony123456789",
+        "status" : 1
+    }
+]
