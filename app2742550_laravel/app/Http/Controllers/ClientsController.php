@@ -16,7 +16,7 @@ class ClientsController extends Controller
     public function index()
     {
         $clients = Client::all();
-        return view('listClients', compact('clients'));
+        return view('Clients.listClients', compact('clients'));
     }
 
 
@@ -25,7 +25,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        //
+        return view('Clients.register');
     }
 
     /**
@@ -33,38 +33,54 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $client = new Client();
+        $client->nombre =  $request->input('nombres');
+        $client->apellidos = $request->input('apellidos');
+
+        $client->save();
+
+        return redirect()->route('Clients.list');
+
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
+  
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $client = Client::find($id);
+        return view('Clients.edit', compact('client'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $client = Client::find($id);
+        $client->nombre =  $request->input('nombres');
+        $client->apellidos = $request->input('apellidos');
+
+        $client->save();
+
+        return redirect()->route('Clients.list');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+
+     public function delete($id)
+     {
+        $client = Client::find($id);
+        return view('Clients.delete', compact('client'));
+     }
+    public function destroy($id)
     {
-        //
+        $client = Client::find($id);
+        $client->delete();
+        return redirect()->route('Clients.list');
+
     }
 }
