@@ -1,6 +1,6 @@
-@extends('layout')
+@extends('layouts.app')
 
-@section('nombreModulo', 'Clientes/Eliminación')
+@section('nombreModulo', 'Clientes / Eliminación')
 
 @section('contenidoGeneral')
 <a href=" {{ route('Clients.list') }}" >Regresar</a> <br><br>
@@ -13,9 +13,9 @@
         <br><br>
         <h1>¿Estas seguro de eliminar al cliente?</h1>
 
-        <form action=" {{route('Client.delete',$client->id )}} " method="post">
+        <form action=" {{route('Client.delete', $client->id )}} " method="post">
             @csrf
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Si, estoy seguro!</button>
           </form>
     </div>
 </div>

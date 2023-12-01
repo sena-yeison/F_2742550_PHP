@@ -40,10 +40,9 @@ class ClientsController extends Controller
         $client->save();
 
         return redirect()->route('Clients.list');
-
     }
 
-  
+
     /**
      * Show the form for editing the specified resource.
      */
@@ -71,15 +70,18 @@ class ClientsController extends Controller
      * Remove the specified resource from storage.
      */
 
-     public function delete($id)
-     {
+    public function remove($id)
+    {
         $client = Client::find($id);
         return view('Clients.delete', compact('client'));
-     }
+    }
+
+
     public function destroy($id)
     {
         $client = Client::find($id);
         $client->delete();
+
         return redirect()->route('Clients.list');
 
     }

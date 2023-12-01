@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('nombreModulo', 'Clientes/Actualización')
 
