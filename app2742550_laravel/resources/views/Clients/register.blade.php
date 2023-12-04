@@ -3,7 +3,6 @@
 @section('nombreModulo', 'Clientes/Registro')
 
 @section('contenidoGeneral')
-<a href=" {{ route('Clients.list') }}" >Regresar</a> <br><br>
     
 <div class="card">
     <div class="card-body">
@@ -18,7 +17,7 @@
                 <label for="exampleInputEmail1">Apellidos</label>
                 <input type="text" name="apellidos" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
           </form>
     </div>
 </div>

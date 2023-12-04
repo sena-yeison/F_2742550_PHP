@@ -3,7 +3,6 @@
 @section('nombreModulo', 'Clientes / Eliminación')
 
 @section('contenidoGeneral')
-<a href=" {{ route('Clients.list') }}" >Regresar</a> <br><br>
     
 <div class="card">
     <div class="card-body">
